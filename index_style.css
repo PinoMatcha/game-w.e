@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "MyFont";
+  src: url('fonts/MainFont.otf');
+}
+
+html, body, header {
+  font-family: 'MyFont', serif;
+}
+
+body {
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+  box-sizing: border-box;
+  background: #ccc;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+}
+
+#main {
+  box-sizing: border-box;
+  top: 50px;
+  margin-left: 25%;
+  height: 100%;
+  width: 75%;
+  position: fixed;
+}
+
+#sub {
+  box-sizing: border-box;
+  top: 50px;
+  height: 100%;
+  width: 25%;
+  position: fixed;
+  overflow: auto;
+  background: #eee;
+  padding: 1em;
+  bottom: 10px;
+}
+
+iframe {
+  box-sizing: border-box;
+  border:none;
+  width:100%;
+  height:100%;
+}

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../page_style.css">
+        <script src="../../js/jQuery/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../../js/script.js"></script>
+        <title>パースペクティブエイリアシング（perspective aliasing）</title>
+    </head>
+    <body>
+        <h1>- パースペクティブエイリアシング（perspective aliasing） -</h1>
+        <p>
+        ライトを設置したときに生成されるシャドウマップの解像度が一定のため、カメラに近いところのシャドウが遠いシャドウより荒く見えてしまう現象。<br>
+        （シャドウマップは同じだが、AよりもBの方が荒く見える）<br>
+        <br>
+        これを阻止するためには、近距離でも<a href="../graphics/jaggies.html">ジャギー</a>が目立たないように<a href="shadowmapping.html">シャドウマップ</a>の解像度を高くすれば良いがコストが高い。<br>
+        なので最近では<a href="perspective_aliasing.html">カスケードシャドウ</a>を使うことが多くなっている。<br>
+        <br>
+        <div class="boxFrame">
+        参考リンク<br>
+        <br>
+        <a href="https://docs.unity3d.com/ja/2019.3/Manual/DirLightShadows.html" target="_blank">【unityリファレンス】ディレクショナルライトのシャドウ</a>
+        </div>
+</p>
+    </body>
+</html>

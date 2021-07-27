@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../page_style.css">
+        <script src="../../js/jQuery/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../../js/script.js"></script>
+        <title>物理ベースレンダリング（Physically Based Rendering: PBR）</title>
+    </head>
+    <body>
+        <h1>- 物理ベースレンダリング（Physically Based Rendering: PBR） -</h1>
+        <p>
+        レンダリング手法の一つ。<br>
+        従来のLambertやPhongといった<a href="rendering.html">レンダリング</a>手法とは異なり、現実世界の物理現象（光の散乱や反射、吸収、屈折、エネルギー保存則など）に基づいて再現された色を出力するレンダリング手法。<br>
+        <br>
+        従来のレンダリングモデルでは、<br>
+        <ul>
+            <li>拡散反射色（Diffuse Color）</li>
+            <li>鏡面反射色（Specular Color）</li>
+            <li>光沢（Shininess）</li>
+        </ul><br>
+        といったパラメータで材質の特徴を表していたが、PBRモデルでは<br>
+        <ul>
+            <li>基本色（Albedo Color）</li>
+            <li>粗さ（Roughness）</li>
+            <li>金属度（Metalness）</li>
+            <li>鏡面反射量（Specular）</li>
+        </ul><br>
+        で材質の特徴を表現する。<br>
+        <br>
+        また、使用する<a href="shader.html">シェーダー</a>によってはパラメータが増減する。<br>
+        <br>
+        <div class="boxFrame">
+        参考リンク<br>
+        <br>
+        <a href="https://zenn.dev/mebiusbox/books/619c81d2fbeafd" target="_blank">基礎からはじめる物理ベースレンダリング</a><br>
+        </div>
+        </p>
+    </body>
+</html>

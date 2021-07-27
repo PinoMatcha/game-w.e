@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../page_style.css">
+        <script src="../../js/jQuery/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="../../js/script.js"></script>
+        <title>カスケードシャドウ（Cascaded Shadow）</title>
+    </head>
+    <body>
+        <h1>- カスケードシャドウ（Cascaded Shadow） -</h1>
+        <p>
+        影（シャドウ）の表現する際の手法の一つ。<br>
+        通常、シャドウはカメラに近いところだと<a href="../graphics/jaggies.html">ジャギー</a>が目立ってしまう（<a href="perspective_aliasing.html">パースペクティブエイリアシング</a>）。<br>
+        そこで、解像度の違うシャドウマップを複数枚用意してカメラからの距離に応じてシャドウマップを使い分けることで、カメラ近場は高解像度のシャドウマップを使用し、遠いところは低解像度のシャドウマップを使ってシャドウのレンダリングを行うことでジャギーを解消できる。<br>
+        この手法は、影の値を算出する<a href="../programming/algorithm">アルゴリズム</a>とは別の処理であるため様々なシャドウ技法に適用させることができる。<br>
+        <br>
+        <div class="boxFrame">
+        参考リンク<br>
+        <br>
+        <a href="https://docs.unity3d.com/ja/2019.3/Manual/DirLightShadows.html" target="_blank">【unityリファレンス】ディレクショナルライトのシャドウ</a>
+        </div>
+</p>
+    </body>
+</html>

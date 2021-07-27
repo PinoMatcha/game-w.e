@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "MyFont";
+  src: url('../fonts/MainFont.otf');
+}
+
+html, body, header {
+  font-family: 'MyFont', serif;
+}
+
+body {
+	display: none;
+    margin: 0;
+    padding: 0.5em 2em 0 1em;
+}
+
+h1{
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  font-size: 18px;
+}
+
+.boxFrame {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*ï∂éöêF*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*ê¸*/
+    border-radius: 10px;/*äpÇÃä€Ç›*/
+}
+.boxFrame p {
+    margin: 0; 
+    padding: 0;
+}
