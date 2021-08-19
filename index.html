@@ -10,7 +10,32 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
-    <header id="header">ゲーム開発に関わる用語と解説まとめ</header>
+
+    <div>
+    <!-- 時刻表示用 -->
+        <script>
+        // <![CDATA[
+            function digs(num) {
+                return ( num < 10 )?num = "0" + num:num = num
+            }
+
+            function Watch() {
+                var date = new Date();
+                var nowHour = digs( date.getHours() );
+                var nowMin = digs( date.getMinutes() );
+                var nowSec = digs( date.getSeconds() );
+                var msg = nowHour + ":" + nowMin + ":" + nowSec;
+                document.getElementById("watch").innerHTML = "現在時刻: " + msg;
+             }
+
+            setInterval('Watch()',500);
+        // ]]>
+        </script>
+    </div>
+
+    <header id="header">
+        ゲーム開発に関わる用語と解説まとめ <div id="watch"></div>
+    </header>
 
 <main id="main">
     <iframe src="pages/top_page.html" name="mainpage">htmlのiframe機能を利用しています。<br>iframe対応のサイトでご覧ください。</iframe>
@@ -74,6 +99,7 @@
     <li class="menu"><a href="pages/3dcg/perspective_aliasing.html" target="mainpage">パースペクティブエイリアシング</a></li>
     <li class="menu"><a href="pages/3dcg/cascaded_shadow.html" target="mainpage">カスケードシャドウ</a></li>
     <li class="menu"><a href="pages/3dcg/shader.html" target="mainpage">シェーダー</a></li>
+    <li>Subject</li>
     <li>Subject</li>
     <li>Subject</li>
     <li>Subject</li>
